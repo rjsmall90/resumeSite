@@ -26,13 +26,14 @@
 
 #home .profile_pic {
     position: relative;
-    width: 50%;
+    width: 35%;
 }
 
 #home .profile_pic img {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 #home .overlay {
@@ -45,6 +46,7 @@
     width: 0;
     height: 100%;
     transition: .5s ease;
+    opacity: 5;
 }
 
 #home .profile_pic:hover .overlay {
@@ -272,7 +274,7 @@
 }
 
 #btp .circular_reveal_b::after {
-    content: "Built From Scratch";
+    content: "BTP.dev";
     position: absolute;
     background: rgba(255, 255, 255, 0.705);
     width: 100%;

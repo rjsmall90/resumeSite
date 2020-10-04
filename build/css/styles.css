@@ -9,9 +9,294 @@
     background-color: black;
 }
 
+
+/* ************************* home *************************  */
+
+#home {
+    font-family: "DINCondensed-Bold";
+}
+
+#home p {
+    font-size: 30px;
+}
+
+#home h1 {
+    color: white;
+}
+
+#home .profile_pic {
+    position: relative;
+    width: 35%;
+}
+
+#home .profile_pic img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#home .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 5;
+}
+
+#home .profile_pic:hover .overlay {
+    width: 100%;
+  }
+
+#home .profile_pic .p {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+}
+
+
+
+/* ************************* contact *************************  */
+/* 
+#contact {
+    text-align: center;
+
+}
+
+#contact hr {
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+} */
+
+#contact ul {
+    font-family: "DINCondensed-Bold";
+    color: white;
+}
+
+#contact li {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* ************************* phone  *************************  */
+
+#phone .circular_reveal_p {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-content: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#phone .circular_reveal_p img {
+    width: 100%;
+}
+
+#phone .circular_reveal_p::after {
+    content: "302-983-1758";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.705);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size: 30px;
+    transition: transform 0.2s cubic-bezier(0, 0, 0.3, 1),
+    opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
+    opacity: 0;
+}
+
+#phone .circular_reveal_p:hover::after {
+    opacity: 1;
+}
+
+/* ************************* email  *************************  */
+
+#email .circular_reveal_e {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-content: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#email .circular_reveal_e img {
+    width: 100%;
+}
+
+#email .circular_reveal_e::after {
+    content: "rjsmall90@gmail.com";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.705);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size: 20px;
+    transition: transform 0.2s cubic-bezier(0, 0, 0.3, 1),
+    opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
+    opacity: 0;
+}
+
+#email .circular_reveal_e:hover::after {
+    opacity: 1;
+}
+
+/* ************************* linked  *************************  */
+
+#linked .circular_reveal_l {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-content: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#linked .circular_reveal_l img {
+    width: 100%;
+}
+
+#linked .circular_reveal_l::after {
+    content: "Follow Me";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.705);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size: 30px;
+    transition: transform 0.2s cubic-bezier(0, 0, 0.3, 1),
+    opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
+    opacity: 0;
+}
+
+#linked .circular_reveal_l:hover::after {
+    opacity: 1;
+}
+
+/* ************************* gh  *************************  */
+
+#gh .circular_reveal_g {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-content: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#gh .circular_reveal_g img {
+    width: 100%;
+}
+
+#gh .circular_reveal_g::after {
+    content: "Check My Code";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.705);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size: 30px;
+    transition: transform 0.2s cubic-bezier(0, 0, 0.3, 1),
+    opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
+    opacity: 0;
+}
+
+#gh .circular_reveal_g:hover::after {
+    opacity: 1;
+}
+
+/* ************************* btp  *************************  */
+
+#btp .circular_reveal_b {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-content: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#btp .circular_reveal_b img {
+    width: 100%;
+}
+
+#btp .circular_reveal_b::after {
+    content: "BTP.dev";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.705);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size: 30px;
+    transition: transform 0.2s cubic-bezier(0, 0, 0.3, 1),
+    opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
+    opacity: 0;
+}
+
+#btp .circular_reveal_b:hover::after {
+    opacity: 1;
+}
 /* ************************* header *************************  */
 
-#header .links {
+/* #header .links {
     text-align: center;
 }
 
@@ -27,7 +312,7 @@
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 /* ************************* home *************************  */
 
@@ -37,14 +322,14 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
- } */
+ } 
 
  #home {
      background-color: black;
      text-align: center;
  }
 
- #home h1 {
+ /* #home h1 {
      font-family: 'Times New Roman', Times, serif;
      color: white;
  }
@@ -62,7 +347,7 @@
     position: relative;
     padding-top: 30px;
     padding-bottom: 30px;
-
+ 
 
 }
 
@@ -76,14 +361,23 @@
     
  
    
-}
-
+} */
 
 /* ************************* about *************************  */
-
+/* 
 #about { 
     background-color: black;
- }
+}
+
+#about .profile_pic {
+    width: 400px; 
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+#about .profile_pic img {
+}
 
 #about .summary-header {
     text-align: center;
@@ -99,7 +393,7 @@
 }
 
 /* ************************* skills *************************  */
-/* #skills { background-color: #cccccc; } */
+/* #skills { background-color: #cccccc; } 
 
 #skills h2 {
     font-family: 'Times New Roman', Times, serif;
@@ -119,7 +413,7 @@
 }
 
 
-/* ************************* blogs *************************  */
+/* ************************* blogs *************************  
 
 #blogs .list {
     text-align: center;
@@ -138,7 +432,7 @@
     text-align: center;
 }
 
-/* ************************* portfolio *************************  */
+/* ************************* portfolio *************************  
 
 #portfolio .cards {
     width: 425px;
@@ -159,7 +453,7 @@
 
 
 
-/* ************************* resume *************************  */
+/* ************************* resume *************************  
 
 #resume { 
     background-color: white;
@@ -205,34 +499,6 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-}
+} */
 
 
-
-/* ************************* contact *************************  */
-
-#contact {
-    text-align: center;
-
-}
-
-#contact hr {
-    display: block;
-    margin-before: 0.5em;
-    margin-after: 0.5em;
-    margin-start: auto;
-    margin-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
-}
-
-#contact ul {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-}
-
-#contact li {
-    display: inline-block;
-    padding: 10px;
-}
